@@ -22,6 +22,7 @@
 > Now You Are Capable To Run The Script On That System
 > It Will Extract All Wi-Fi Passwords From Victim's System And Upload It To Your Webhook URL
 ## 5)  `Batch-Script.bat`
+> This Is Same As `Batch-Script.bat`
 > First Copy The Script To `C:\` Directory.
 > Then Replace The Webhook URL Id
 > Then Just Execute The Script
