@@ -1,4 +1,4 @@
-# Wi-Fi-Password-Grabber-With-Online-Upload-Facility-With-Ducky-Script-Batch-Script-vbs-Script
+# Wi-Fi Password Grabber With Online Upload Facility With Ducky Script Batch Script vbs Script
 
 # Usage
 ## `Ducky-Script.txt`
